@@ -1,27 +1,28 @@
-# ReyreysOrders
+# reyreys-orders
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
+![Reyrey](./src/assets/ReyRey.jpg)
 
-## Development server
+This project is to showcase NgRx with a very basic application. It uses NgRx in terms of "feature state" in lieu of root state. The application is very simple and is basically just a dinner ordering application. It has components to view and edit orders. It also has a login feature.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This app also runs with a very simple Express application that can be seen in the "server" folder. This applicaiton just modifies a local json file that serves as a database for the application.
 
-## Code scaffolding
+The "feature" state is defined in the "/src/state" folder. There are "features" defined for:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- login
+- orders
 
-## Build
+I also highly recommend using the [Chrome Redux DevTools extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) with this application locally.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Running Locally
 
-## Running unit tests
+I have setup [concurrently](https://www.npmjs.com/package/concurrently) to run the backend and frontend all in one command.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Just run `npm run start` to get both working together, and then open [http://localhost:4200/](http://localhost:4200/).
 
-## Running end-to-end tests
+## How to use this Application
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+I recommend creating more components and stores based on the configuration in this project. Working with NgRx really helps the learning process.
 
-## Further help
+## Further Reading
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+I highly recommend the NgRx best practices post [here](https://wesleygrimes.com/angular/2018/05/30/ngrx-best-practices-for-enterprise-angular-applications). I also recommend checking out my article [Adding NgRx to Your Existing Applications](https://indepth.dev/adding-ngrx-to-your-existing-applications/).
