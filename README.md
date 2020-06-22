@@ -17,7 +17,7 @@ I also highly recommend using the [Chrome Redux DevTools extension](https://chro
 
 I have setup [concurrently](https://www.npmjs.com/package/concurrently) to run the backend and frontend all in one command.
 
-Just run `npm run start` to get both working together, and then open [http://localhost:4200/](http://localhost:4200/).
+Just do the standard `npm install` and then `npm run start` to get both working together, and then open [http://localhost:4200/](http://localhost:4200/).
 
 ## How to use this Application
 
